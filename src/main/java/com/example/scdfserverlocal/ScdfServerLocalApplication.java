@@ -7,8 +7,6 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
 import org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration;
 import org.springframework.boot.autoconfigure.session.SessionAutoConfiguration;
 import org.springframework.cloud.dataflow.server.EnableDataFlowServer;
-import org.springframework.cloud.deployer.spi.cloudfoundry.CloudFoundryDeployerAutoConfiguration;
-import org.springframework.cloud.deployer.spi.kubernetes.KubernetesAutoConfiguration;
 import org.springframework.cloud.deployer.spi.local.LocalDeployerAutoConfiguration;
 import org.springframework.cloud.task.configuration.MetricsAutoConfiguration;
 
@@ -20,8 +18,6 @@ import org.springframework.cloud.task.configuration.MetricsAutoConfiguration;
 		SecurityAutoConfiguration.class,
 		UserDetailsServiceAutoConfiguration.class,
 		LocalDeployerAutoConfiguration.class,
-		CloudFoundryDeployerAutoConfiguration.class,
-		KubernetesAutoConfiguration.class
 })
 public class ScdfServerLocalApplication {
 
